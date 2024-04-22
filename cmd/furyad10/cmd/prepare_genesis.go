@@ -41,9 +41,9 @@ func PrepareGenesisCmd(defaultNodeHome string, mbm module.BasicManager) *cobra.C
 		Short: "Prepare a genesis file with initial setup",
 		Long: `Prepare a genesis file with initial setup.
 Example:
-	furyad prepare-genesis furya-1 cosmos_aidrop.csv crew3_airdrop.csv evmos_orbital_ape.csv
+	furyad10 prepare-genesis furya-1 cosmos_aidrop.csv crew3_airdrop.csv evmos_orbital_ape.csv
 	- Check input genesis:
-		file is at ~/.furyad/config/genesis.json
+		file is at ~/.furyad10/config/genesis.json
 `,
 		Args: cobra.ExactArgs(4),
 		RunE: func(cmd *cobra.Command, args []string) error {

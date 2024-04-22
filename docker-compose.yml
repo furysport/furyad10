@@ -1,58 +1,58 @@
 version: "3"
 
 services:
-  furyadnode0:
-    container_name: furyadnode0
-    image: "tendermint/furyadnode"
+  furyad10node0:
+    container_name: furyad10node0
+    image: "tendermint/furyad10node"
     ports:
       - "26656-26657:26656-26657"
     environment:
       - ID=0
-      - LOG=${LOG:-furyad.log}
+      - LOG=${LOG:-furyad10.log}
     volumes:
-      - ./build:/furyad:Z
+      - ./build:/furyad10:Z
     networks:
       localnet:
         ipv4_address: 192.168.10.2
 
-  furyadnode1:
-    container_name: furyadnode1
-    image: "tendermint/furyadnode"
+  furyad10node1:
+    container_name: furyad10node1
+    image: "tendermint/furyad10node"
     ports:
       - "26659-26660:26656-26657"
     environment:
       - ID=1
-      - LOG=${LOG:-furyad.log}
+      - LOG=${LOG:-furyad10.log}
     volumes:
-      - ./build:/furyad:Z
+      - ./build:/furyad10:Z
     networks:
       localnet:
         ipv4_address: 192.168.10.3
 
-  furyadnode2:
-    container_name: furyadnode2
-    image: "tendermint/furyadnode"
+  furyad10node2:
+    container_name: furyad10node2
+    image: "tendermint/furyad10node"
     environment:
       - ID=2
-      - LOG=${LOG:-furyad.log}
+      - LOG=${LOG:-furyad10.log}
     ports:
       - "26661-26662:26656-26657"
     volumes:
-      - ./build:/furyad:Z
+      - ./build:/furyad10:Z
     networks:
       localnet:
         ipv4_address: 192.168.10.4
 
-  furyadnode3:
-    container_name: furyadnode3
-    image: "tendermint/furyadnode"
+  furyad10node3:
+    container_name: furyad10node3
+    image: "tendermint/furyad10node"
     environment:
       - ID=3
-      - LOG=${LOG:-furyad.log}
+      - LOG=${LOG:-furyad10.log}
     ports:
       - "26663-26664:26656-26657"
     volumes:
-      - ./build:/furyad:Z
+      - ./build:/furyad10:Z
     networks:
       localnet:
         ipv4_address: 192.168.10.5

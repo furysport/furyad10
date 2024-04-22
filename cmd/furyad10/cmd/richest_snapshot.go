@@ -57,7 +57,7 @@ func ExportRichestSnapshotCmd() *cobra.Command {
 		Short: "Export richest snapshot from genesis export",
 		Long: `Export richest snapshot from genesis export
 Example:
-	furyad export-richest-snapshot ./snapshot-furya-richest.json ./snapshot-furya-richest.csv
+	furyad10 export-richest-snapshot ./snapshot-furya-richest.json ./snapshot-furya-richest.csv
 `,
 		Args: cobra.ExactArgs(2),
 		RunE: func(cmd *cobra.Command, args []string) error {

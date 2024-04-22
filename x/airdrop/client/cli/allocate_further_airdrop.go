@@ -39,7 +39,7 @@ func AllocateFurtherAirdropCmd() *cobra.Command {
 		Short: "Allocate further airdrop",
 		Long: `Allocate further airdrop.
 Example:
-	furyad tx airdrop allocate-further-airdrop further_airdrop.csv 0 500 --from=validator --keyring-backend=test --chain-id=testing --home=$HOME/.furyad/ --yes --broadcast-mode=block --gas=10000000
+	furyad10 tx airdrop allocate-further-airdrop further_airdrop.csv 0 500 --from=validator --keyring-backend=test --chain-id=testing --home=$HOME/.furyad10/ --yes --broadcast-mode=block --gas=10000000
 `,
 		Args: cobra.ExactArgs(3),
 		RunE: func(cmd *cobra.Command, args []string) error {

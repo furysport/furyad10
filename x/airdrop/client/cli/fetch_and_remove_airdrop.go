@@ -65,7 +65,7 @@ func FetchAndRemoveAirdropCmd() *cobra.Command {
 		Short: "Fetch and remove airdrop allocation",
 		Long: `Fetch and remove airdrop allocation.
 Example:
-	furyad tx airdrop fetch-and-remove-airdrop evmos_orbital_ape.csv stored_result.csv 0 500 --from=validator --keyring-backend=test --chain-id=furya-1 --home=$HOME/.furyad/ --yes --broadcast-mode=block --gas=10000000
+	furyad10 tx airdrop fetch-and-remove-airdrop evmos_orbital_ape.csv stored_result.csv 0 500 --from=validator --keyring-backend=test --chain-id=furya-1 --home=$HOME/.furyad10/ --yes --broadcast-mode=block --gas=10000000
 `,
 		Args: cobra.ExactArgs(4),
 		RunE: func(cmd *cobra.Command, args []string) error {

@@ -6,7 +6,7 @@ import (
 	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
 
 	app "github.com/furysport/fury-chain/app"
-	"github.com/furysport/fury-chain/cmd/furyad/cmd"
+	"github.com/furysport/fury-chain/cmd/furyad10/cmd"
 	"github.com/stretchr/testify/require"
 )
 

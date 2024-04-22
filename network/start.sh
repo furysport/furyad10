@@ -1,7 +1,7 @@
 #!/bin/bash
 
 BINARY=icad
-BINARY_T=furyad
+BINARY_T=furyad10
 CHAIN_DIR=./data
 CHAINID_1=test-1
 CHAINID_2=test-2

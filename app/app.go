@@ -279,7 +279,7 @@ func init() {
 		stdlog.Println("Failed to get home dir %2", err)
 	}
 
-	DefaultNodeHome = filepath.Join(userHomeDir, ".furyad")
+	DefaultNodeHome = filepath.Join(userHomeDir, ".furyad10")
 }
 
 // NewFuryaApp returns a reference to an initialized NxtPop.

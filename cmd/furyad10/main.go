@@ -8,7 +8,7 @@ import (
 
 	app "github.com/furysport/fury-chain/app"
 	appparams "github.com/furysport/fury-chain/app/params"
-	"github.com/furysport/fury-chain/cmd/furyad/cmd"
+	"github.com/furysport/fury-chain/cmd/furyad10/cmd"
 )
 
 func main() {
